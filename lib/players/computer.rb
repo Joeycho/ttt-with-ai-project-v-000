@@ -11,11 +11,11 @@ module Players
       @input = "5"
       return
     end
-    
+
     index.each do
     |a| if board.valid_move?((a+1).to_s)
            if a == 0 || a==3 || a==6
-             if !board.valid_move?((a+2).to_s) && board.position((a+1).to_s)!=board.position((a+2).to_s)
+             if !board.valid_move?((a+2).to_s) && self.token!=board.position((a+2).to_s)
                 @input = (a+1).to_s
                 return
              end
