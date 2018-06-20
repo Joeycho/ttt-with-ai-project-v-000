@@ -58,7 +58,7 @@ class Game
 
   def turn
 
-    binding.pry
+  #  binding.pry
     self.current_player.move(self.board)
 
     if self.board.valid_move?(self.current_player.input)
