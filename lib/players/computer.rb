@@ -9,10 +9,9 @@ module Players
     |a| if board.valid_move?(a.to_s)
       #  binding.pry
         return (a+1).to_s
+      
         end
     end
-    end
-
     end
   end
 end
