@@ -76,7 +76,7 @@ class Game
     while self.over? == false
       self.turn
     end
-  #  binding.pry
+    binding.pry
     if self.draw? == true
       puts "Cat's Game!"
     elsif self.won? != false
