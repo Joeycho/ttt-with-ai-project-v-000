@@ -11,6 +11,7 @@ class Board
   end
 
   def position(input)
+    binding.pry
     @cells[input.to_i-1]
   end
 
