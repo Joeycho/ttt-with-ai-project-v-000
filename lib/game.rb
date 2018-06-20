@@ -82,9 +82,6 @@ class Game
     elsif self.won? != false
       puts "Congratulations #{self.winner}!"
     end
-
-
-
   end
 
 
