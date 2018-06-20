@@ -34,5 +34,6 @@ while again == "Yes"
   puts "Do you want to play again? If \"Yes\", type Yes"
 
   again = gets
+  players = 5
 
 end
