@@ -4,4 +4,7 @@ require_relative '../config/environment'
 
  game = Game.new
 puts "Welcome to Tic-tac-toe game!"
+puts "Which play mode do you prefer?"
+
+ players = gets
  game.play
