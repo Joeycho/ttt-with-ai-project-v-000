@@ -6,7 +6,7 @@ module Players
       binding.pry
     index = [0,1,2,3,4,5,6,7,8]
     index.each do
-    |a| if board.valid_move?(a.to_s)
+    |a| if board.valid_move?((a+1).to_s)
       #  binding.pry
         return (a+1).to_s
 
