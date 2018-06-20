@@ -8,11 +8,11 @@ puts "Which play mode do you prefer?"
 
 
 
-again = false
+again = "Yes"
 
 while again == "Yes"
 
-  
+
   while players != 0 || players != 1 || players != 2
     puts "Put the correct players number(0 - 2)"
     players = gets
@@ -34,5 +34,3 @@ while again == "Yes"
   again = gets
 
 end
-
-
