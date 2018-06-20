@@ -23,6 +23,17 @@ module Players
         end
     end
 
+    index.each do
+    |a| if board.valid_move?((a+1).to_s)
+           if a == 2 || a==5 || a==8
+             if !board.valid_move?(a.to_s) && self.token!=board.position(a.to_s)
+                @input = (a+1).to_s
+                return
+             end
+           end
+        end
+    end
+
     if board.valid_move?("1")
       @input = "1"
     elsif  board.valid_move?("3")
