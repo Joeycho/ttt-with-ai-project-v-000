@@ -22,5 +22,4 @@ elsif players == 2
 end
 
 
- game = Game.new
  game.play
