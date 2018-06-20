@@ -65,6 +65,7 @@ class Game
         self.board.update(self.current_player.input, self.current_player)
     #    binding.pry
         self.board.display
+        return
     else
   #    binding.pry
         self.turn
