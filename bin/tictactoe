@@ -34,7 +34,7 @@ while again == "Yes"
 
   puts "Do you want to play again? If \"Yes\", type Yes"
 
-  again = gets
+  again = gets.strip
   players = 5
 
 end
