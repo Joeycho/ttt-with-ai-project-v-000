@@ -52,6 +52,8 @@ class Board
       if !self.taken?(input)
         true
       end
+    else
+      false
     end
   end
 
