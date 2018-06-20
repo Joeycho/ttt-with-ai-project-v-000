@@ -21,5 +21,15 @@ elsif players == 2
   game = Game.new(Players::Human.new("X"),Players::Human.new("O"))
 end
 
+again = false
 
- game.play
+while again == false
+
+  game.play
+
+  puts "Do you want to play again?"
+  
+
+end
+
+
