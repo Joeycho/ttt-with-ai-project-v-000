@@ -53,7 +53,6 @@ class Board
         true
       end
     end
-    false
   end
 
   def update(input, player)
