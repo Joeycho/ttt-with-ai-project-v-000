@@ -3,7 +3,7 @@ module Players
     attr_accessor :input
 
     def move(board)
-      binding.pry
+      #binding.pry
     index = [0,1,2,3,4,5,6,7,8]
     index.each do
     |a| if board.valid_move?((a+1).to_s)
