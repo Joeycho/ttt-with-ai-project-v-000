@@ -86,6 +86,37 @@ class Game
 
   def start
     
+    again = "Yes"
+    players = 5
+
+
+    while again == "Yes"
+
+
+      while players != "0" && players != "1" && players != "2"
+        puts "Put the correct players number(0 - 2)"
+        players = gets.strip
+      #  binding.pry
+      end
+
+      if players == "0"
+        game = Game.new(Players::Computer.new("X"),Players::Computer.new("O"))
+      elsif players == "1"
+        game = Game.new(Players::Human.new("X"),Players::Computer.new("O"))
+      elsif players == "2"
+        game = Game.new(Players::Human.new("X"),Players::Human.new("O"))
+      end
+
+
+      game.play
+
+      puts "Do you want to play again? If \"Yes\", type Yes"
+
+      again = gets.strip
+      players = 5
+
+    end
+
   end
 
 end
