@@ -25,11 +25,11 @@ module Players
 
     if board.valid_move?("1")
       @input = "1"
-    elsif  board.valid_move("3")
+    elsif  board.valid_move?("3")
       @input = "3"
-    elsif  board.valid_move("7")
+    elsif  board.valid_move?("7")
       @input = "7"
-    elsif  board.valid_move("9")
+    elsif  board.valid_move?("9")
       @input = "9"
     end
 
