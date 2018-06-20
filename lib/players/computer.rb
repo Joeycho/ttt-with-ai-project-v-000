@@ -6,14 +6,24 @@ module Players
       #binding.pry
     index = [0,1,2,3,4,5,6,7,8]
     ##STRATEGY
-    
+
     if board.valid_move?("5")
       @input = "5"
       return
     end
-    elsif 
+    
+    index.each do
+    |a| if board.valid_move?((a+1).to_s)
+           if a == 0 || a==3 || a==6
+             if !board.valid_move?((a+2).to_s) && board.position((a+1).to_s)!=board.position((a+2).to_s)
+                @input = (a+1).to_s
+                return
+             end
+           end
+        end
+    end
 
-      board.valid_move?("1")
+    if board.valid_move?("1")
       @input = "1"
     elsif  board.valid_move("3")
       @input = "3"
