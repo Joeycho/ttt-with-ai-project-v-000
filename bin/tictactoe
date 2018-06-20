@@ -23,6 +23,7 @@ while again == "Yes"
 
   if players == "0"
     game = Game.new(Players::Computer.new("X"),Players::Computer.new("O"))
+    binding.pry
   elsif players == "1"
     game = Game.new(Players::Human.new("X"),Players::Computer.new("O"))
   elsif players == "2"
