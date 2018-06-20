@@ -9,6 +9,8 @@ puts "Which play mode do you prefer?"
 
 
 again = "Yes"
+players = 5
+
 
 while again == "Yes"
 
