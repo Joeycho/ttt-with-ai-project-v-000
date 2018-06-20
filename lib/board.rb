@@ -51,6 +51,8 @@ class Board
     if 1<= input.to_i && input.to_i <=9
       if !self.taken?(input)
         true
+      else
+        false
       end
     else
       false
