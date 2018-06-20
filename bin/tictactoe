@@ -15,16 +15,16 @@ players = 5
 while again == "Yes"
 
 
-  while players != 0 || players != 1 || players != 2
+  while players != "0" || players != "1" || players != "2"
     puts "Put the correct players number(0 - 2)"
     players = gets
   end
 
-  if players == 0
+  if players == "0"
     game = Game.new(Players::Computer.new("X"),Players::Computer.new("O"))
-  elsif players == 1
+  elsif players == "1"
     game = Game.new(Players::Human.new("X"),Players::Computer.new("O"))
-  elsif players == 2
+  elsif players == "2"
     game = Game.new(Players::Human.new("X"),Players::Human.new("O"))
   end
 
