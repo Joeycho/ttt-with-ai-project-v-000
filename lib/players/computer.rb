@@ -8,7 +8,7 @@ module Players
     index.each do
     |a| if board.valid_move?((a+1).to_s)
       #  binding.pry
-        return (a+1).to_s
+        @input = (a+1).to_s
 
         end
     end
