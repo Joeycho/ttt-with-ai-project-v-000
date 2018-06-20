@@ -18,7 +18,7 @@ while again == "Yes"
   while players != "0" || players != "1" || players != "2"
     puts "Put the correct players number(0 - 2)"
     players = gets.strip
-    binding.pry
+  #  binding.pry
   end
 
   if players == "0"
