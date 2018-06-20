@@ -2,9 +2,25 @@
 
 require_relative '../config/environment'
 
- game = Game.new
+ 
 puts "Welcome to Tic-tac-toe game!"
 puts "Which play mode do you prefer?"
 
- players = gets
+
+
+while players != 0 || players != 1 || players != 2
+  puts "Put the correct players number(0 - 2)"
+  players = gets
+end
+
+if players == 0
+  game = Game.new(Players::Computer.new("X"),Players::Computer.new("O"))
+elsif players == 1
+  game
+elsif players == 2
+
+end
+
+
+ game = Game.new
  game.play
