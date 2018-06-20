@@ -66,7 +66,7 @@ class Game
     #    binding.pry
         self.board.display
     else
-      binding.pry
+  #    binding.pry
         self.turn
     end
   end
