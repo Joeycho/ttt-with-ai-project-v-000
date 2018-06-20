@@ -4,7 +4,8 @@ module Players
 
     def move(board)
     #  binding.pry
-    0..8.each do
+    index = [0,1,2,3,4,5,6,7,8]
+    .each do
     |a| if board.valid_move?(a.to_s)
         return a.to_s
     end
